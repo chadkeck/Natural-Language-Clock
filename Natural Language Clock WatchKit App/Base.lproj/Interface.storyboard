@@ -8,9 +8,9 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller spacing="1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Natural_Language_Clock_WatchKit_App" customModuleProvider="target">
+                <controller spacing="3" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Natural_Language_Clock_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="center" spacing="17" id="XBT-qt-qwS">
+                        <group width="1" alignment="center" spacing="18" id="XBT-qt-qwS">
                             <items>
                                 <label alignment="left" text="IT" minimumScaleFactor="0.80000000000000004" id="TLS-so-fFC">
                                     <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
@@ -39,7 +39,7 @@
                             </items>
                             <variation key="device=watch42mm" spacing="19"/>
                         </group>
-                        <group width="1" alignment="center" spacing="19" id="BH0-Ax-IK8">
+                        <group width="1" alignment="center" spacing="25" id="BH0-Ax-IK8">
                             <items>
                                 <label alignment="left" text="QUARTER" minimumScaleFactor="0.80000000000000004" id="7Nk-RB-ULh">
                                     <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
@@ -56,7 +56,7 @@
                             </items>
                             <variation key="device=watch42mm" spacing="20"/>
                         </group>
-                        <group width="1" alignment="center" spacing="15" id="IT7-Yl-4fL">
+                        <group width="1" alignment="center" spacing="17" id="IT7-Yl-4fL">
                             <items>
                                 <label alignment="left" text="FIVE" minimumScaleFactor="0.80000000000000004" id="bSO-UP-Atk">
                                     <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
@@ -79,7 +79,7 @@
                             </items>
                             <variation key="device=watch42mm" spacing="16"/>
                         </group>
-                        <group width="1" alignment="center" spacing="16" id="Iuu-1M-Riw">
+                        <group width="1" alignment="center" spacing="18" id="Iuu-1M-Riw">
                             <items>
                                 <label alignment="left" text="PAST" minimumScaleFactor="0.80000000000000004" id="5ZE-vT-rMd">
                                     <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
@@ -102,7 +102,7 @@
                             </items>
                             <variation key="device=watch42mm" spacing="17"/>
                         </group>
-                        <group width="1" alignment="center" spacing="21" id="myn-M2-nSN">
+                        <group width="1" alignment="center" spacing="22" id="myn-M2-nSN">
                             <items>
                                 <label alignment="left" text="TWO" minimumScaleFactor="0.80000000000000004" id="Pi4-q8-s5b">
                                     <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
@@ -125,7 +125,7 @@
                             </items>
                             <variation key="device=watch42mm" spacing="23"/>
                         </group>
-                        <group width="1" alignment="center" spacing="16" id="riu-JC-dUl">
+                        <group width="1" alignment="center" spacing="18" id="riu-JC-dUl">
                             <items>
                                 <label alignment="left" text="SIX" minimumScaleFactor="0.80000000000000004" id="KKf-2s-EKk">
                                     <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
@@ -148,7 +148,7 @@
                             </items>
                             <variation key="device=watch42mm" spacing="17"/>
                         </group>
-                        <group width="1" alignment="center" spacing="13" id="gx9-as-GrG">
+                        <group width="1" alignment="center" spacing="16" id="gx9-as-GrG">
                             <items>
                                 <label alignment="left" text="NINE" minimumScaleFactor="0.80000000000000004" id="f6W-Eh-iMz">
                                     <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
@@ -171,7 +171,7 @@
                             </items>
                             <variation key="device=watch42mm" spacing="15"/>
                         </group>
-                        <group width="1" alignment="center" spacing="25" id="sQQ-p2-om0">
+                        <group width="1" alignment="center" spacing="30" id="sQQ-p2-om0">
                             <items>
                                 <label alignment="left" text="TWELVE" minimumScaleFactor="0.80000000000000004" id="fYw-Ox-LsG">
                                     <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
