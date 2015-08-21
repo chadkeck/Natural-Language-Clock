@@ -26,6 +26,11 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var twelveLabel: WKInterfaceLabel!
     @IBOutlet var oclockLabel: WKInterfaceLabel!
 
+    let onColor = UIColor.whiteColor()
+    let offColor = UIColor.darkGrayColor()
+
+    var updateTimer: NSTimer?
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
 
@@ -35,6 +40,8 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+
+        startUpdating()
     }
 
     override func didDeactivate() {
@@ -42,4 +49,128 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    func startUpdating() {
+        let now = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components([.Year, .Month, .Day, .Hour, .Minute, .Second], fromDate: now)
+        let fireDate = calendar.dateFromComponents(components)
+        updateTimer = NSTimer(fireDate: fireDate!, interval: 60.0, target: self, selector: "showTime", userInfo: nil, repeats: true)
+        NSRunLoop.mainRunLoop().addTimer(updateTimer!, forMode: NSDefaultRunLoopMode)
+    }
+
+    func stopUpdating() {
+        updateTimer?.invalidate()
+    }
+
+    func showTime() {
+        let flags: NSCalendarUnit = [.Hour, .Minute]
+        let now = NSDate()
+        let components = NSCalendar.autoupdatingCurrentCalendar().components(flags, fromDate: now)
+
+        itLabel.setTextColor(onColor)
+        isLabel.setTextColor(onColor)
+
+        setHour(components.hour)
+        setMinute(components.minute)
+    }
+
+    func setHour(hour: Int) {
+        let hourLabels = [
+            oneLabel,
+            twoLabel,
+            threeLabel,
+            fourLabel,
+            fiveHourLabel,
+            sixLabel,
+            sevenLabel,
+            eightLabel,
+            nineLabel,
+            tenHourLabel,
+            elevenLabel,
+            twelveLabel
+        ]
+        hourLabels.map { $0.setTextColor(offColor) }
+
+        switch hour {
+        case 1:
+            oneLabel.setTextColor(onColor)
+        case 2:
+            twoLabel.setTextColor(onColor)
+        case 3:
+            threeLabel.setTextColor(onColor)
+        case 4:
+            fourLabel.setTextColor(onColor)
+        case 5:
+            fiveHourLabel.setTextColor(onColor)
+        case 6:
+            sixLabel.setTextColor(onColor)
+        case 7:
+            sevenLabel.setTextColor(onColor)
+        case 8:
+            eightLabel.setTextColor(onColor)
+        case 9:
+            nineLabel.setTextColor(onColor)
+        case 10:
+            tenHourLabel.setTextColor(onColor)
+        case 11:
+            elevenLabel.setTextColor(onColor)
+        case 12:
+            twelveLabel.setTextColor(onColor)
+        default: // handle 24-hour locales
+            setHour(hour % 12)
+        }
+    }
+
+    func setMinute(minute: Int) {
+        let minuteLabels = [
+            halfLabel,
+            tenMinutesLabel,
+            quarterLabel,
+            twentyLabel,
+            fiveMinutesLabel,
+            minutesLabel,
+            toLabel,
+            pastLabel,
+            oclockLabel
+        ]
+        minuteLabels.map { $0.setTextColor(offColor) }
+
+        switch minute {
+        case 5..<10:
+            fiveMinutesLabel.setTextColor(onColor)
+        case 10..<15:
+            tenMinutesLabel.setTextColor(onColor)
+        case 15..<20:
+            quarterLabel.setTextColor(onColor)
+        case 20..<25:
+            twentyLabel.setTextColor(onColor)
+        case 25..<30:
+            twentyLabel.setTextColor(onColor)
+            fiveMinutesLabel.setTextColor(onColor)
+        case 30..<35:
+            halfLabel.setTextColor(onColor)
+        case 35..<40:
+            twentyLabel.setTextColor(onColor)
+            fiveMinutesLabel.setTextColor(onColor)
+        case 40..<45:
+            twentyLabel.setTextColor(onColor)
+        case 45..<50:
+            quarterLabel.setTextColor(onColor)
+        case 50..<55:
+            tenMinutesLabel.setTextColor(onColor)
+        case 55..<60:
+            fiveMinutesLabel.setTextColor(onColor)
+
+        default:
+            oclockLabel.setTextColor(onColor)
+        }
+
+        switch minute {
+        case 5..<35:
+            pastLabel.setTextColor(onColor)
+        case 35..<60:
+            toLabel.setTextColor(onColor)
+        default: break
+        }
+    }
 }
