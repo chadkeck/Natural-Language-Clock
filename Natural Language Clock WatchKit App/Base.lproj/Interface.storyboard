@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="15A263e" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller spacing="1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Natural_Language_Clock_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" spacing="16" id="XBT-qt-qwS">
+                            <items>
+                                <label alignment="left" text="IT" minimumScaleFactor="0.80000000000000004" id="TLS-so-fFC">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="IS" minimumScaleFactor="0.80000000000000004" id="Htk-y8-q7j">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="HALF" minimumScaleFactor="0.80000000000000004" id="Avt-dt-H8U">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="TEN" minimumScaleFactor="0.80000000000000004" id="Leo-En-gPs">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" spacing="16" id="BH0-Ax-IK8">
+                            <items>
+                                <label alignment="left" text="QUARTER" minimumScaleFactor="0.80000000000000004" id="7Nk-RB-ULh">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="TWENTY" minimumScaleFactor="0.80000000000000004" id="XbU-Zz-9ly">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" spacing="13" id="IT7-Yl-4fL">
+                            <items>
+                                <label alignment="left" text="FIVE" minimumScaleFactor="0.80000000000000004" id="bSO-UP-Atk">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="MINUTES" minimumScaleFactor="0.80000000000000004" id="sf6-oT-ixU">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="TO" minimumScaleFactor="0.80000000000000004" id="b86-OO-zEF">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" spacing="14" id="Iuu-1M-Riw">
+                            <items>
+                                <label alignment="left" text="PAST" minimumScaleFactor="0.80000000000000004" id="5ZE-vT-rMd">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="ONE" minimumScaleFactor="0.80000000000000004" id="9GZ-JM-PRg">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="THREE" minimumScaleFactor="0.80000000000000004" id="8Gr-vL-cdR">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" spacing="19" id="myn-M2-nSN">
+                            <items>
+                                <label alignment="left" text="TWO" minimumScaleFactor="0.80000000000000004" id="Pi4-q8-s5b">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="FOUR" minimumScaleFactor="0.80000000000000004" id="CB7-XC-cox">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="FIVE" minimumScaleFactor="0.80000000000000004" id="gN6-bK-MFj">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" spacing="14" id="riu-JC-dUl">
+                            <items>
+                                <label alignment="left" text="SIX" minimumScaleFactor="0.80000000000000004" id="KKf-2s-EKk">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="SEVEN" minimumScaleFactor="0.80000000000000004" id="qYf-Sa-S83">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="EIGHT" minimumScaleFactor="0.80000000000000004" id="zxK-aY-Ktu">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" spacing="11" id="gx9-as-GrG">
+                            <items>
+                                <label alignment="left" text="NINE" minimumScaleFactor="0.80000000000000004" id="f6W-Eh-iMz">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="TEN" minimumScaleFactor="0.80000000000000004" id="Lix-iY-sfw">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="ELEVEN" minimumScaleFactor="0.80000000000000004" id="m1s-be-enS">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" spacing="21" id="sQQ-p2-om0">
+                            <items>
+                                <label alignment="left" text="TWELVE" minimumScaleFactor="0.80000000000000004" id="fYw-Ox-LsG">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="O′CLOCK" minimumScaleFactor="0.80000000000000004" id="6yI-R2-MOb">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

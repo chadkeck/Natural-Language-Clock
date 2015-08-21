@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BCFCAA41B87A16F006C49DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFCAA31B87A16F006C49DF /* AppDelegate.swift */; };
+		1BCFCAA61B87A16F006C49DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFCAA51B87A16F006C49DF /* ViewController.swift */; };
+		1BCFCAA91B87A16F006C49DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCFCAA71B87A16F006C49DF /* Main.storyboard */; };
+		1BCFCAAB1B87A16F006C49DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCFCAAA1B87A16F006C49DF /* Assets.xcassets */; };
+		1BCFCAAE1B87A16F006C49DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCFCAAC1B87A16F006C49DF /* LaunchScreen.storyboard */; };
+		1BCFCAB91B87A16F006C49DF /* Natural_Language_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFCAB81B87A16F006C49DF /* Natural_Language_ClockTests.swift */; };
+		1BCFCABE1B87A16F006C49DF /* Natural Language Clock WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1BCFCABD1B87A16F006C49DF /* Natural Language Clock WatchKit App.app */; };
+		1BCFCAC41B87A16F006C49DF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCFCAC21B87A16F006C49DF /* Interface.storyboard */; };
+		1BCFCAC61B87A16F006C49DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCFCAC51B87A16F006C49DF /* Assets.xcassets */; };
+		1BCFCACD1B87A16F006C49DF /* Natural Language Clock WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1BCFCACC1B87A16F006C49DF /* Natural Language Clock WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1BCFCAD21B87A16F006C49DF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFCAD11B87A16F006C49DF /* InterfaceController.swift */; };
+		1BCFCAD41B87A16F006C49DF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFCAD31B87A16F006C49DF /* ExtensionDelegate.swift */; };
+		1BCFCAD61B87A16F006C49DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCFCAD51B87A16F006C49DF /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BCFCAB51B87A16F006C49DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BCFCA981B87A16F006C49DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BCFCA9F1B87A16F006C49DF;
+			remoteInfo = "Natural Language Clock";
+		};
+		1BCFCABF1B87A16F006C49DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BCFCA981B87A16F006C49DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BCFCABC1B87A16F006C49DF;
+			remoteInfo = "Natural Language Clock WatchKit App";
+		};
+		1BCFCACE1B87A16F006C49DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BCFCA981B87A16F006C49DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BCFCACB1B87A16F006C49DF;
+			remoteInfo = "Natural Language Clock WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BCFCADD1B87A16F006C49DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1BCFCACD1B87A16F006C49DF /* Natural Language Clock WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCFCAE11B87A16F006C49DF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1BCFCABE1B87A16F006C49DF /* Natural Language Clock WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1BCFCAA01B87A16F006C49DF /* Natural Language Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Natural Language Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCFCAA31B87A16F006C49DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BCFCAA51B87A16F006C49DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BCFCAA81B87A16F006C49DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BCFCAAA1B87A16F006C49DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BCFCAAD1B87A16F006C49DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BCFCAAF1B87A16F006C49DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCFCAB41B87A16F006C49DF /* Natural Language ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Natural Language ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCFCAB81B87A16F006C49DF /* Natural_Language_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Natural_Language_ClockTests.swift; sourceTree = "<group>"; };
+		1BCFCABA1B87A16F006C49DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCFCABD1B87A16F006C49DF /* Natural Language Clock WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Natural Language Clock WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCFCAC31B87A16F006C49DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1BCFCAC51B87A16F006C49DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BCFCAC71B87A16F006C49DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCFCACC1B87A16F006C49DF /* Natural Language Clock WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Natural Language Clock WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCFCAD11B87A16F006C49DF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1BCFCAD31B87A16F006C49DF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1BCFCAD51B87A16F006C49DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BCFCAD71B87A16F006C49DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BCFCA9D1B87A16F006C49DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCFCAB11B87A16F006C49DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCFCAC91B87A16F006C49DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BCFCA971B87A16F006C49DF = {
+			isa = PBXGroup;
+			children = (
+				1BCFCAA21B87A16F006C49DF /* Natural Language Clock */,
+				1BCFCAB71B87A16F006C49DF /* Natural Language ClockTests */,
+				1BCFCAC11B87A16F006C49DF /* Natural Language Clock WatchKit App */,
+				1BCFCAD01B87A16F006C49DF /* Natural Language Clock WatchKit Extension */,
+				1BCFCAA11B87A16F006C49DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BCFCAA11B87A16F006C49DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BCFCAA01B87A16F006C49DF /* Natural Language Clock.app */,
+				1BCFCAB41B87A16F006C49DF /* Natural Language ClockTests.xctest */,
+				1BCFCABD1B87A16F006C49DF /* Natural Language Clock WatchKit App.app */,
+				1BCFCACC1B87A16F006C49DF /* Natural Language Clock WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BCFCAA21B87A16F006C49DF /* Natural Language Clock */ = {
+			isa = PBXGroup;
+			children = (
+				1BCFCAA31B87A16F006C49DF /* AppDelegate.swift */,
+				1BCFCAA51B87A16F006C49DF /* ViewController.swift */,
+				1BCFCAA71B87A16F006C49DF /* Main.storyboard */,
+				1BCFCAAA1B87A16F006C49DF /* Assets.xcassets */,
+				1BCFCAAC1B87A16F006C49DF /* LaunchScreen.storyboard */,
+				1BCFCAAF1B87A16F006C49DF /* Info.plist */,
+			);
+			path = "Natural Language Clock";
+			sourceTree = "<group>";
+		};
+		1BCFCAB71B87A16F006C49DF /* Natural Language ClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BCFCAB81B87A16F006C49DF /* Natural_Language_ClockTests.swift */,
+				1BCFCABA1B87A16F006C49DF /* Info.plist */,
+			);
+			path = "Natural Language ClockTests";
+			sourceTree = "<group>";
+		};
+		1BCFCAC11B87A16F006C49DF /* Natural Language Clock WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1BCFCAC21B87A16F006C49DF /* Interface.storyboard */,
+				1BCFCAC51B87A16F006C49DF /* Assets.xcassets */,
+				1BCFCAC71B87A16F006C49DF /* Info.plist */,
+			);
+			path = "Natural Language Clock WatchKit App";
+			sourceTree = "<group>";
+		};
+		1BCFCAD01B87A16F006C49DF /* Natural Language Clock WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1BCFCAD11B87A16F006C49DF /* InterfaceController.swift */,
+				1BCFCAD31B87A16F006C49DF /* ExtensionDelegate.swift */,
+				1BCFCAD51B87A16F006C49DF /* Assets.xcassets */,
+				1BCFCAD71B87A16F006C49DF /* Info.plist */,
+			);
+			path = "Natural Language Clock WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BCFCA9F1B87A16F006C49DF /* Natural Language Clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCFCAE21B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language Clock" */;
+			buildPhases = (
+				1BCFCA9C1B87A16F006C49DF /* Sources */,
+				1BCFCA9D1B87A16F006C49DF /* Frameworks */,
+				1BCFCA9E1B87A16F006C49DF /* Resources */,
+				1BCFCAE11B87A16F006C49DF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BCFCAC01B87A16F006C49DF /* PBXTargetDependency */,
+			);
+			name = "Natural Language Clock";
+			productName = "Natural Language Clock";
+			productReference = 1BCFCAA01B87A16F006C49DF /* Natural Language Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BCFCAB31B87A16F006C49DF /* Natural Language ClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCFCAE51B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language ClockTests" */;
+			buildPhases = (
+				1BCFCAB01B87A16F006C49DF /* Sources */,
+				1BCFCAB11B87A16F006C49DF /* Frameworks */,
+				1BCFCAB21B87A16F006C49DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BCFCAB61B87A16F006C49DF /* PBXTargetDependency */,
+			);
+			name = "Natural Language ClockTests";
+			productName = "Natural Language ClockTests";
+			productReference = 1BCFCAB41B87A16F006C49DF /* Natural Language ClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BCFCABC1B87A16F006C49DF /* Natural Language Clock WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCFCADE1B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language Clock WatchKit App" */;
+			buildPhases = (
+				1BCFCABB1B87A16F006C49DF /* Resources */,
+				1BCFCADD1B87A16F006C49DF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BCFCACF1B87A16F006C49DF /* PBXTargetDependency */,
+			);
+			name = "Natural Language Clock WatchKit App";
+			productName = "Natural Language Clock WatchKit App";
+			productReference = 1BCFCABD1B87A16F006C49DF /* Natural Language Clock WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1BCFCACB1B87A16F006C49DF /* Natural Language Clock WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCFCADA1B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language Clock WatchKit Extension" */;
+			buildPhases = (
+				1BCFCAC81B87A16F006C49DF /* Sources */,
+				1BCFCAC91B87A16F006C49DF /* Frameworks */,
+				1BCFCACA1B87A16F006C49DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Natural Language Clock WatchKit Extension";
+			productName = "Natural Language Clock WatchKit Extension";
+			productReference = 1BCFCACC1B87A16F006C49DF /* Natural Language Clock WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BCFCA981B87A16F006C49DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Chad Bibler";
+				TargetAttributes = {
+					1BCFCA9F1B87A16F006C49DF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					1BCFCAB31B87A16F006C49DF = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 1BCFCA9F1B87A16F006C49DF;
+					};
+					1BCFCABC1B87A16F006C49DF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					1BCFCACB1B87A16F006C49DF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 1BCFCA9B1B87A16F006C49DF /* Build configuration list for PBXProject "Natural Language Clock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BCFCA971B87A16F006C49DF;
+			productRefGroup = 1BCFCAA11B87A16F006C49DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BCFCA9F1B87A16F006C49DF /* Natural Language Clock */,
+				1BCFCAB31B87A16F006C49DF /* Natural Language ClockTests */,
+				1BCFCABC1B87A16F006C49DF /* Natural Language Clock WatchKit App */,
+				1BCFCACB1B87A16F006C49DF /* Natural Language Clock WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BCFCA9E1B87A16F006C49DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCFCAAE1B87A16F006C49DF /* LaunchScreen.storyboard in Resources */,
+				1BCFCAAB1B87A16F006C49DF /* Assets.xcassets in Resources */,
+				1BCFCAA91B87A16F006C49DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCFCAB21B87A16F006C49DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCFCABB1B87A16F006C49DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCFCAC61B87A16F006C49DF /* Assets.xcassets in Resources */,
+				1BCFCAC41B87A16F006C49DF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCFCACA1B87A16F006C49DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCFCAD61B87A16F006C49DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BCFCA9C1B87A16F006C49DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCFCAA61B87A16F006C49DF /* ViewController.swift in Sources */,
+				1BCFCAA41B87A16F006C49DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCFCAB01B87A16F006C49DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCFCAB91B87A16F006C49DF /* Natural_Language_ClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCFCAC81B87A16F006C49DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCFCAD41B87A16F006C49DF /* ExtensionDelegate.swift in Sources */,
+				1BCFCAD21B87A16F006C49DF /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BCFCAB61B87A16F006C49DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BCFCA9F1B87A16F006C49DF /* Natural Language Clock */;
+			targetProxy = 1BCFCAB51B87A16F006C49DF /* PBXContainerItemProxy */;
+		};
+		1BCFCAC01B87A16F006C49DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BCFCABC1B87A16F006C49DF /* Natural Language Clock WatchKit App */;
+			targetProxy = 1BCFCABF1B87A16F006C49DF /* PBXContainerItemProxy */;
+		};
+		1BCFCACF1B87A16F006C49DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BCFCACB1B87A16F006C49DF /* Natural Language Clock WatchKit Extension */;
+			targetProxy = 1BCFCACE1B87A16F006C49DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BCFCAA71B87A16F006C49DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BCFCAA81B87A16F006C49DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BCFCAAC1B87A16F006C49DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BCFCAAD1B87A16F006C49DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1BCFCAC21B87A16F006C49DF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BCFCAC31B87A16F006C49DF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BCFCAD81B87A16F006C49DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BCFCAD91B87A16F006C49DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BCFCADB1B87A16F006C49DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Natural Language Clock WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.Natural-Language-Clock.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		1BCFCADC1B87A16F006C49DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Natural Language Clock WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.Natural-Language-Clock.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		1BCFCADF1B87A16F006C49DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Natural_Language_Clock_WatchKit_Extension;
+				INFOPLIST_FILE = "Natural Language Clock WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.Natural-Language-Clock.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		1BCFCAE01B87A16F006C49DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Natural_Language_Clock_WatchKit_Extension;
+				INFOPLIST_FILE = "Natural Language Clock WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.Natural-Language-Clock.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		1BCFCAE31B87A16F006C49DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Natural Language Clock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.Natural-Language-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1BCFCAE41B87A16F006C49DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Natural Language Clock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.Natural-Language-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1BCFCAE61B87A16F006C49DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Natural Language ClockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.Natural-Language-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Natural Language Clock.app/Natural Language Clock";
+			};
+			name = Debug;
+		};
+		1BCFCAE71B87A16F006C49DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Natural Language ClockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.Natural-Language-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Natural Language Clock.app/Natural Language Clock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BCFCA9B1B87A16F006C49DF /* Build configuration list for PBXProject "Natural Language Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCFCAD81B87A16F006C49DF /* Debug */,
+				1BCFCAD91B87A16F006C49DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BCFCADA1B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language Clock WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCFCADB1B87A16F006C49DF /* Debug */,
+				1BCFCADC1B87A16F006C49DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BCFCADE1B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language Clock WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCFCADF1B87A16F006C49DF /* Debug */,
+				1BCFCAE01B87A16F006C49DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BCFCAE21B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCFCAE31B87A16F006C49DF /* Debug */,
+				1BCFCAE41B87A16F006C49DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BCFCAE51B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language ClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCFCAE61B87A16F006C49DF /* Debug */,
+				1BCFCAE71B87A16F006C49DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BCFCA981B87A16F006C49DF /* Project object */;
+}
