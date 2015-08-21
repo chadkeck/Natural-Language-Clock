@@ -142,28 +142,36 @@ class InterfaceController: WKInterfaceController {
         switch minute {
         case 5..<10:
             fiveMinutesLabel.setTextColor(onColor)
+            minutesLabel.setTextColor(onColor)
         case 10..<15:
             tenMinutesLabel.setTextColor(onColor)
+            minutesLabel.setTextColor(onColor)
         case 15..<20:
             quarterLabel.setTextColor(onColor)
         case 20..<25:
             twentyLabel.setTextColor(onColor)
+            minutesLabel.setTextColor(onColor)
         case 25..<30:
             twentyLabel.setTextColor(onColor)
             fiveMinutesLabel.setTextColor(onColor)
+            minutesLabel.setTextColor(onColor)
         case 30..<35:
             halfLabel.setTextColor(onColor)
         case 35..<40:
             twentyLabel.setTextColor(onColor)
             fiveMinutesLabel.setTextColor(onColor)
+            minutesLabel.setTextColor(onColor)
         case 40..<45:
             twentyLabel.setTextColor(onColor)
+            minutesLabel.setTextColor(onColor)
         case 45..<50:
             quarterLabel.setTextColor(onColor)
         case 50..<55:
             tenMinutesLabel.setTextColor(onColor)
+            minutesLabel.setTextColor(onColor)
         case 55..<60:
             fiveMinutesLabel.setTextColor(onColor)
+            minutesLabel.setTextColor(onColor)
 
         default:
             oclockLabel.setTextColor(onColor)
