@@ -112,6 +112,31 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="eightLabel" destination="zxK-aY-Ktu" id="M7N-Lw-STe"/>
+                        <outlet property="elevenLabel" destination="m1s-be-enS" id="Qrd-ga-D2y"/>
+                        <outlet property="fiveHourLabel" destination="gN6-bK-MFj" id="QdH-dS-JGg"/>
+                        <outlet property="fiveMinutesLabel" destination="bSO-UP-Atk" id="Ve3-Sk-IxZ"/>
+                        <outlet property="fourLabel" destination="CB7-XC-cox" id="eWO-D5-8TA"/>
+                        <outlet property="halfLabel" destination="Avt-dt-H8U" id="VbW-bT-42V"/>
+                        <outlet property="isLabel" destination="Htk-y8-q7j" id="Cgo-rX-4tj"/>
+                        <outlet property="itLabel" destination="TLS-so-fFC" id="LkP-cn-daP"/>
+                        <outlet property="minutesLabel" destination="sf6-oT-ixU" id="2jq-XI-ybX"/>
+                        <outlet property="nineLabel" destination="f6W-Eh-iMz" id="E2A-C8-bxf"/>
+                        <outlet property="oclockLabel" destination="6yI-R2-MOb" id="PTM-Dt-Q3O"/>
+                        <outlet property="oneLabel" destination="9GZ-JM-PRg" id="Ail-JG-G0l"/>
+                        <outlet property="pastLabel" destination="5ZE-vT-rMd" id="tke-lx-zmE"/>
+                        <outlet property="quarterLabel" destination="7Nk-RB-ULh" id="snq-kR-6CC"/>
+                        <outlet property="sevenLabel" destination="qYf-Sa-S83" id="Oc6-JI-zlH"/>
+                        <outlet property="sixLabel" destination="KKf-2s-EKk" id="B8w-LB-cul"/>
+                        <outlet property="tenHourLabel" destination="Lix-iY-sfw" id="gpg-x3-tSs"/>
+                        <outlet property="tenMinutesLabel" destination="Leo-En-gPs" id="Pta-wt-eYb"/>
+                        <outlet property="threeLabel" destination="8Gr-vL-cdR" id="Loy-Dg-xeE"/>
+                        <outlet property="toLabel" destination="b86-OO-zEF" id="WrJ-vN-dOB"/>
+                        <outlet property="twelveLabel" destination="fYw-Ox-LsG" id="coN-G2-woe"/>
+                        <outlet property="twentyLabel" destination="XbU-Zz-9ly" id="IFG-Xh-Xxz"/>
+                        <outlet property="twoLabel" destination="Pi4-q8-s5b" id="e6D-pE-6qF"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>
