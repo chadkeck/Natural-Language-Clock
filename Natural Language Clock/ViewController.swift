@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Natural Language Clock
-//
-//  Created by Chad Bibler on 8/21/15.
-//  Copyright © 2015 Chad Bibler. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -42,7 +34,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
