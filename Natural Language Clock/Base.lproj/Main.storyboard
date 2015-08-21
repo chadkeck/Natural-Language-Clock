@@ -243,6 +243,31 @@
                             <constraint firstItem="LT7-Zi-zlD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="qQu-la-Rxp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="eightLabel" destination="Yh5-Sb-yBG" id="k5L-n0-xWS"/>
+                        <outlet property="elevenLabel" destination="Vrp-Hp-00n" id="cez-la-xpv"/>
+                        <outlet property="fiveHourLabel" destination="bi5-2h-uqx" id="I8S-Ez-eMG"/>
+                        <outlet property="fiveMinutesLabel" destination="dBY-Dw-B2g" id="abi-Gz-XFx"/>
+                        <outlet property="fourLabel" destination="3QY-Qz-oaF" id="Bs0-hc-iKX"/>
+                        <outlet property="halfLabel" destination="Wj4-wJ-cyq" id="mqx-dg-PEd"/>
+                        <outlet property="isLabel" destination="yS6-1C-mQc" id="nDo-4S-EZm"/>
+                        <outlet property="itLabel" destination="O7a-dR-g9I" id="SbR-ea-amX"/>
+                        <outlet property="minutesLabel" destination="wfd-VA-NvU" id="Q7c-yd-gXh"/>
+                        <outlet property="nineLabel" destination="QhG-BW-Rtp" id="bqr-eZ-Xdv"/>
+                        <outlet property="oclockLabel" destination="Gc1-kw-aT3" id="d2b-WA-xy5"/>
+                        <outlet property="oneLabel" destination="9wI-K8-MtJ" id="68G-dl-ToI"/>
+                        <outlet property="pastLabel" destination="slE-U6-0EN" id="U7I-xb-B7U"/>
+                        <outlet property="quarterLabel" destination="i51-TI-nDZ" id="NFa-Iw-5K0"/>
+                        <outlet property="sevenLabel" destination="GNG-E2-AEP" id="gxe-x2-Vsr"/>
+                        <outlet property="sixLabel" destination="BB0-Bh-aB9" id="AbA-dL-geo"/>
+                        <outlet property="tenHourLabel" destination="Qd7-xf-DAT" id="OuG-Yi-Fo3"/>
+                        <outlet property="tenMinutesLabel" destination="lYy-48-tDm" id="U9Z-WU-VZr"/>
+                        <outlet property="threeLabel" destination="alR-ul-U2s" id="l57-Oe-U7X"/>
+                        <outlet property="toLabel" destination="pES-ol-sTO" id="5gC-dr-FDr"/>
+                        <outlet property="twelveLabel" destination="Evf-w3-sTm" id="wki-Hl-UfH"/>
+                        <outlet property="twentyLabel" destination="iLL-Tz-b78" id="FJt-08-aQJ"/>
+                        <outlet property="twoLabel" destination="Ob8-iV-xcW" id="SEi-r5-qJo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
