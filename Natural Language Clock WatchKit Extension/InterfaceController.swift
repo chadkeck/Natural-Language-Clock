@@ -30,52 +30,13 @@ class InterfaceController: WKInterfaceController {
     let offColor = UIColor.darkGrayColor()
 
     var updateTimer: NSTimer?
+    var minuteLabels = [WKInterfaceLabel]()
+    var hourLabels = [WKInterfaceLabel]()
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
 
-        // Configure interface objects here.
-    }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-
-        startUpdating()
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
-    func startUpdating() {
-        let now = NSDate()
-        let calendar = NSCalendar.currentCalendar()
-        let components = calendar.components([.Year, .Month, .Day, .Hour, .Minute, .Second], fromDate: now)
-        let fireDate = calendar.dateFromComponents(components)
-        updateTimer = NSTimer(fireDate: fireDate!, interval: 60.0, target: self, selector: "showTime", userInfo: nil, repeats: true)
-        NSRunLoop.mainRunLoop().addTimer(updateTimer!, forMode: NSDefaultRunLoopMode)
-    }
-
-    func stopUpdating() {
-        updateTimer?.invalidate()
-    }
-
-    func showTime() {
-        let flags: NSCalendarUnit = [.Hour, .Minute]
-        let now = NSDate()
-        let components = NSCalendar.autoupdatingCurrentCalendar().components(flags, fromDate: now)
-
-        itLabel.setTextColor(onColor)
-        isLabel.setTextColor(onColor)
-
-        setHour(components.hour)
-        setMinute(components.minute)
-    }
-
-    func setHour(hour: Int) {
-        let hourLabels = [
+        hourLabels = [
             oneLabel,
             twoLabel,
             threeLabel,
@@ -89,6 +50,60 @@ class InterfaceController: WKInterfaceController {
             elevenLabel,
             twelveLabel
         ]
+
+        minuteLabels = [
+            halfLabel,
+            tenMinutesLabel,
+            quarterLabel,
+            twentyLabel,
+            fiveMinutesLabel,
+            minutesLabel,
+            toLabel,
+            pastLabel,
+            oclockLabel
+        ]
+    }
+
+    override func willActivate() {
+        // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
+
+        startUpdating()
+    }
+
+    override func didDeactivate() {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+
+        stopUpdating()
+    }
+
+    func startUpdating() {
+        let now = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components([.Year, .Month, .Day, .Hour, .Minute, .Second], fromDate: now)
+        let fireDate = calendar.dateFromComponents(components)
+        updateTimer = NSTimer(fireDate: fireDate!, interval: 60.0, target: self, selector: "showCurrentTime", userInfo: nil, repeats: true)
+        NSRunLoop.mainRunLoop().addTimer(updateTimer!, forMode: NSDefaultRunLoopMode)
+    }
+
+    func stopUpdating() {
+        updateTimer?.invalidate()
+    }
+
+    func showCurrentTime() {
+        let flags: NSCalendarUnit = [.Hour, .Minute]
+        let now = NSDate()
+        let components = NSCalendar.autoupdatingCurrentCalendar().components(flags, fromDate: now)
+
+        itLabel.setTextColor(onColor)
+        isLabel.setTextColor(onColor)
+
+        setHour(components.hour)
+        setMinute(components.minute)
+    }
+
+    func setHour(hour: Int) {
         hourLabels.map { $0.setTextColor(offColor) }
 
         switch hour {
@@ -122,17 +137,6 @@ class InterfaceController: WKInterfaceController {
     }
 
     func setMinute(minute: Int) {
-        let minuteLabels = [
-            halfLabel,
-            tenMinutesLabel,
-            quarterLabel,
-            twentyLabel,
-            fiveMinutesLabel,
-            minutesLabel,
-            toLabel,
-            pastLabel,
-            oclockLabel
-        ]
         minuteLabels.map { $0.setTextColor(offColor) }
 
         switch minute {
