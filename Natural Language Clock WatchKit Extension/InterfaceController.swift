@@ -99,44 +99,11 @@ class InterfaceController: WKInterfaceController {
         itLabel.setTextColor(onColor)
         isLabel.setTextColor(onColor)
 
-        setHour(components.hour)
-        setMinute(components.minute)
+        setHourAndMinute(hour: components.hour, minute: components.minute)
     }
 
-    func setHour(hour: Int) {
+    func setHourAndMinute(hour hour: Int, minute: Int) {
         hourLabels.map { $0.setTextColor(offColor) }
-
-        switch hour {
-        case 1:
-            oneLabel.setTextColor(onColor)
-        case 2:
-            twoLabel.setTextColor(onColor)
-        case 3:
-            threeLabel.setTextColor(onColor)
-        case 4:
-            fourLabel.setTextColor(onColor)
-        case 5:
-            fiveHourLabel.setTextColor(onColor)
-        case 6:
-            sixLabel.setTextColor(onColor)
-        case 7:
-            sevenLabel.setTextColor(onColor)
-        case 8:
-            eightLabel.setTextColor(onColor)
-        case 9:
-            nineLabel.setTextColor(onColor)
-        case 10:
-            tenHourLabel.setTextColor(onColor)
-        case 11:
-            elevenLabel.setTextColor(onColor)
-        case 12:
-            twelveLabel.setTextColor(onColor)
-        default: // handle 24-hour locales
-            setHour(hour % 12)
-        }
-    }
-
-    func setMinute(minute: Int) {
         minuteLabels.map { $0.setTextColor(offColor) }
 
         switch minute {
@@ -184,5 +151,37 @@ class InterfaceController: WKInterfaceController {
             toLabel.setTextColor(onColor)
         default: break
         }
+
+        let hourToIlluminate = minute >= 35 ? hour + 1 : hour
+        switch hourToIlluminate {
+        case 1:
+            oneLabel.setTextColor(onColor)
+        case 2:
+            twoLabel.setTextColor(onColor)
+        case 3:
+            threeLabel.setTextColor(onColor)
+        case 4:
+            fourLabel.setTextColor(onColor)
+        case 5:
+            fiveHourLabel.setTextColor(onColor)
+        case 6:
+            sixLabel.setTextColor(onColor)
+        case 7:
+            sevenLabel.setTextColor(onColor)
+        case 8:
+            eightLabel.setTextColor(onColor)
+        case 9:
+            nineLabel.setTextColor(onColor)
+        case 10:
+            tenHourLabel.setTextColor(onColor)
+        case 11:
+            elevenLabel.setTextColor(onColor)
+        case 12:
+            twelveLabel.setTextColor(onColor)
+        default: // handle 24-hour locales
+            setHourAndMinute(hour: (hour % 12), minute: minute)
+        }
+
+
     }
 }
