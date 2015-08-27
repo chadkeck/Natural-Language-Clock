@@ -7,29 +7,29 @@ protocol ToggleableLabel {
 }
 
 struct NaturalTimeLabels {
-    var itLabel: ToggleableLabel
-    var isLabel: ToggleableLabel
-    var halfLabel: ToggleableLabel
-    var tenMinutesLabel: ToggleableLabel
-    var quarterLabel: ToggleableLabel
-    var twentyLabel: ToggleableLabel
-    var fiveMinutesLabel: ToggleableLabel
-    var minutesLabel: ToggleableLabel
-    var toLabel: ToggleableLabel
-    var pastLabel: ToggleableLabel
-    var oneLabel: ToggleableLabel
-    var threeLabel: ToggleableLabel
-    var twoLabel: ToggleableLabel
-    var fourLabel: ToggleableLabel
-    var fiveHourLabel: ToggleableLabel
-    var sixLabel: ToggleableLabel
-    var sevenLabel: ToggleableLabel
-    var eightLabel: ToggleableLabel
-    var nineLabel: ToggleableLabel
-    var tenHourLabel: ToggleableLabel
-    var elevenLabel: ToggleableLabel
-    var twelveLabel: ToggleableLabel
-    var oclockLabel: ToggleableLabel
+    let itLabel: ToggleableLabel
+    let isLabel: ToggleableLabel
+    let halfLabel: ToggleableLabel
+    let tenMinutesLabel: ToggleableLabel
+    let quarterLabel: ToggleableLabel
+    let twentyLabel: ToggleableLabel
+    let fiveMinutesLabel: ToggleableLabel
+    let minutesLabel: ToggleableLabel
+    let toLabel: ToggleableLabel
+    let pastLabel: ToggleableLabel
+    let oneLabel: ToggleableLabel
+    let threeLabel: ToggleableLabel
+    let twoLabel: ToggleableLabel
+    let fourLabel: ToggleableLabel
+    let fiveHourLabel: ToggleableLabel
+    let sixLabel: ToggleableLabel
+    let sevenLabel: ToggleableLabel
+    let eightLabel: ToggleableLabel
+    let nineLabel: ToggleableLabel
+    let tenHourLabel: ToggleableLabel
+    let elevenLabel: ToggleableLabel
+    let twelveLabel: ToggleableLabel
+    let oclockLabel: ToggleableLabel
 }
 
 protocol NaturalTimeLabelProvider {
@@ -60,8 +60,8 @@ protocol NaturalTimeLabelProvider {
 
 struct LabelProvider: NaturalTimeLabelProvider {
     let labels: NaturalTimeLabels
-    var onColor: UIColor
-    var offColor: UIColor
+    let onColor: UIColor
+    let offColor: UIColor
     init(labels: NaturalTimeLabels, onColor: UIColor, offColor: UIColor) {
         self.labels = labels
         self.onColor = onColor
