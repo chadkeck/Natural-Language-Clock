@@ -58,7 +58,7 @@ protocol NaturalTimeLabelProvider {
     var oclockLabel: ToggleableLabel { get }
 }
 
-class LabelProvider: NaturalTimeLabelProvider {
+struct LabelProvider: NaturalTimeLabelProvider {
     let labels: NaturalTimeLabels
     var onColor: UIColor
     var offColor: UIColor
