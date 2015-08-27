@@ -20,6 +20,10 @@
 		1BCFCAD21B87A16F006C49DF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFCAD11B87A16F006C49DF /* InterfaceController.swift */; };
 		1BCFCAD41B87A16F006C49DF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFCAD31B87A16F006C49DF /* ExtensionDelegate.swift */; };
 		1BCFCAD61B87A16F006C49DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCFCAD51B87A16F006C49DF /* Assets.xcassets */; };
+		1BF2820B1B87DEB40044DF80 /* Common-WatchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF282071B87DDEA0044DF80 /* Common-WatchOS.swift */; };
+		1BF2820D1B87DFF30044DF80 /* Common-iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2820C1B87DFF30044DF80 /* Common-iOS.swift */; };
+		1BF2820F1B87E0400044DF80 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2820E1B87E0400044DF80 /* Common.swift */; };
+		1BF282101B87E04F0044DF80 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2820E1B87E0400044DF80 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +95,9 @@
 		1BCFCAD31B87A16F006C49DF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		1BCFCAD51B87A16F006C49DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BCFCAD71B87A16F006C49DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF282071B87DDEA0044DF80 /* Common-WatchOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Common-WatchOS.swift"; path = "Common/Common-WatchOS.swift"; sourceTree = "<group>"; };
+		1BF2820C1B87DFF30044DF80 /* Common-iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Common-iOS.swift"; path = "Common/Common-iOS.swift"; sourceTree = "<group>"; };
+		1BF2820E1B87E0400044DF80 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Common/Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +128,7 @@
 		1BCFCA971B87A16F006C49DF = {
 			isa = PBXGroup;
 			children = (
+				1BF2820A1B87DDF10044DF80 /* Common */,
 				1BCFCAA21B87A16F006C49DF /* Natural Language Clock */,
 				1BCFCAB71B87A16F006C49DF /* Natural Language ClockTests */,
 				1BCFCAC11B87A16F006C49DF /* Natural Language Clock WatchKit App */,
@@ -181,6 +189,16 @@
 				1BCFCAD71B87A16F006C49DF /* Info.plist */,
 			);
 			path = "Natural Language Clock WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1BF2820A1B87DDF10044DF80 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1BF282071B87DDEA0044DF80 /* Common-WatchOS.swift */,
+				1BF2820E1B87E0400044DF80 /* Common.swift */,
+				1BF2820C1B87DFF30044DF80 /* Common-iOS.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF2820F1B87E0400044DF80 /* Common.swift in Sources */,
+				1BF2820D1B87DFF30044DF80 /* Common-iOS.swift in Sources */,
 				1BCFCAA61B87A16F006C49DF /* ViewController.swift in Sources */,
 				1BCFCAA41B87A16F006C49DF /* AppDelegate.swift in Sources */,
 			);
@@ -361,7 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF282101B87E04F0044DF80 /* Common.swift in Sources */,
 				1BCFCAD41B87A16F006C49DF /* ExtensionDelegate.swift in Sources */,
+				1BF2820B1B87DEB40044DF80 /* Common-WatchOS.swift in Sources */,
 				1BCFCAD21B87A16F006C49DF /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +642,7 @@
 				1BCFCADC1B87A16F006C49DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BCFCADE1B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language Clock WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -628,6 +651,7 @@
 				1BCFCAE01B87A16F006C49DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BCFCAE21B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language Clock" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +660,7 @@
 				1BCFCAE41B87A16F006C49DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BCFCAE51B87A16F006C49DF /* Build configuration list for PBXNativeTarget "Natural Language ClockTests" */ = {
 			isa = XCConfigurationList;
@@ -644,6 +669,7 @@
 				1BCFCAE71B87A16F006C49DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

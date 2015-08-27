@@ -30,38 +30,38 @@ class InterfaceController: WKInterfaceController {
     let offColor = UIColor.darkGrayColor()
 
     var updateTimer: NSTimer?
-    var minuteLabels = [WKInterfaceLabel]()
-    var hourLabels = [WKInterfaceLabel]()
+    var labelProvider: LabelProvider?
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
 
-        hourLabels = [
-            oneLabel,
-            twoLabel,
-            threeLabel,
-            fourLabel,
-            fiveHourLabel,
-            sixLabel,
-            sevenLabel,
-            eightLabel,
-            nineLabel,
-            tenHourLabel,
-            elevenLabel,
-            twelveLabel
-        ]
+        let labels = NaturalTimeLabels(
+            itLabel: itLabel,
+            isLabel: isLabel,
+            halfLabel: halfLabel,
+            tenMinutesLabel: tenMinutesLabel,
+            quarterLabel: quarterLabel,
+            twentyLabel: twentyLabel,
+            fiveMinutesLabel: fiveMinutesLabel,
+            minutesLabel: minutesLabel,
+            toLabel: toLabel,
+            pastLabel: pastLabel,
+            oneLabel: oneLabel,
+            threeLabel: threeLabel,
+            twoLabel: twoLabel,
+            fourLabel: fourLabel,
+            fiveHourLabel: fiveHourLabel,
+            sixLabel: sixLabel,
+            sevenLabel: sevenLabel,
+            eightLabel: eightLabel,
+            nineLabel: nineLabel,
+            tenHourLabel: tenHourLabel,
+            elevenLabel: elevenLabel,
+            twelveLabel: twelveLabel,
+            oclockLabel: oclockLabel
+        )
 
-        minuteLabels = [
-            halfLabel,
-            tenMinutesLabel,
-            quarterLabel,
-            twentyLabel,
-            fiveMinutesLabel,
-            minutesLabel,
-            toLabel,
-            pastLabel,
-            oclockLabel
-        ]
+        labelProvider = LabelProvider(labels: labels, onColor: UIColor.whiteColor(), offColor: UIColor.darkGrayColor())
     }
 
     override func willActivate() {
@@ -96,92 +96,6 @@ class InterfaceController: WKInterfaceController {
         let now = NSDate()
         let components = NSCalendar.autoupdatingCurrentCalendar().components(flags, fromDate: now)
 
-        itLabel.setTextColor(onColor)
-        isLabel.setTextColor(onColor)
-
-        setHourAndMinute(hour: components.hour, minute: components.minute)
-    }
-
-    func setHourAndMinute(hour hour: Int, minute: Int) {
-        hourLabels.map { $0.setTextColor(offColor) }
-        minuteLabels.map { $0.setTextColor(offColor) }
-
-        switch minute {
-        case 5..<10:
-            fiveMinutesLabel.setTextColor(onColor)
-            minutesLabel.setTextColor(onColor)
-        case 10..<15:
-            tenMinutesLabel.setTextColor(onColor)
-            minutesLabel.setTextColor(onColor)
-        case 15..<20:
-            quarterLabel.setTextColor(onColor)
-        case 20..<25:
-            twentyLabel.setTextColor(onColor)
-            minutesLabel.setTextColor(onColor)
-        case 25..<30:
-            twentyLabel.setTextColor(onColor)
-            fiveMinutesLabel.setTextColor(onColor)
-            minutesLabel.setTextColor(onColor)
-        case 30..<35:
-            halfLabel.setTextColor(onColor)
-        case 35..<40:
-            twentyLabel.setTextColor(onColor)
-            fiveMinutesLabel.setTextColor(onColor)
-            minutesLabel.setTextColor(onColor)
-        case 40..<45:
-            twentyLabel.setTextColor(onColor)
-            minutesLabel.setTextColor(onColor)
-        case 45..<50:
-            quarterLabel.setTextColor(onColor)
-        case 50..<55:
-            tenMinutesLabel.setTextColor(onColor)
-            minutesLabel.setTextColor(onColor)
-        case 55..<60:
-            fiveMinutesLabel.setTextColor(onColor)
-            minutesLabel.setTextColor(onColor)
-
-        default:
-            oclockLabel.setTextColor(onColor)
-        }
-
-        switch minute {
-        case 5..<35:
-            pastLabel.setTextColor(onColor)
-        case 35..<60:
-            toLabel.setTextColor(onColor)
-        default: break
-        }
-
-        let hourToIlluminate = minute >= 35 ? hour + 1 : hour
-        switch hourToIlluminate {
-        case 1:
-            oneLabel.setTextColor(onColor)
-        case 2:
-            twoLabel.setTextColor(onColor)
-        case 3:
-            threeLabel.setTextColor(onColor)
-        case 4:
-            fourLabel.setTextColor(onColor)
-        case 5:
-            fiveHourLabel.setTextColor(onColor)
-        case 6:
-            sixLabel.setTextColor(onColor)
-        case 7:
-            sevenLabel.setTextColor(onColor)
-        case 8:
-            eightLabel.setTextColor(onColor)
-        case 9:
-            nineLabel.setTextColor(onColor)
-        case 10:
-            tenHourLabel.setTextColor(onColor)
-        case 11:
-            elevenLabel.setTextColor(onColor)
-        case 12:
-            twelveLabel.setTextColor(onColor)
-        default: // handle 24-hour locales
-            setHourAndMinute(hour: (hour % 12), minute: minute)
-        }
-
-
+        labelProvider?.showTime(hour: components.hour, minute: components.minute)
     }
 }
