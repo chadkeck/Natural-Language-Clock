@@ -124,8 +124,14 @@ struct LabelProvider: NaturalTimeLabelProvider {
         itLabel.turnOn()
         isLabel.turnOn()
 
-        setHour(hour)
-        setMinute(minute)
+        if minute >= 35 {
+            // "it is [x] to [next hour]"
+            setHour(hour + 1)
+            setMinute(minute)
+        } else {
+            setHour(hour)
+            setMinute(minute)
+        }
     }
 
     func setHour(hour: Int) {
