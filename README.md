@@ -1,5 +1,5 @@
 # Natural Language Clock
-  For Apple Watch.
+  For Apple Watch and iPhone.
 
 ![License](https://img.shields.io/dub/l/vibe-d.svg)
 
