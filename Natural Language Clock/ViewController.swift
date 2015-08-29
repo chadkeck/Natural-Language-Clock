@@ -75,9 +75,13 @@ class ViewController: UIViewController {
     }
 
     func startUpdating() {
+        showCurrentTime()
+
         let now = NSDate()
         let calendar = NSCalendar.currentCalendar()
         let components = calendar.components([.Year, .Month, .Day, .Hour, .Minute, .Second], fromDate: now)
+        components.minute = components.minute + 1
+        components.second = 0
         let fireDate = calendar.dateFromComponents(components)
         updateTimer = NSTimer(fireDate: fireDate!, interval: 60.0, target: self, selector: "showCurrentTime", userInfo: nil, repeats: true)
         NSRunLoop.mainRunLoop().addTimer(updateTimer!, forMode: NSDefaultRunLoopMode)
